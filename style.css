@@ -44,6 +44,27 @@ body {
     display: none;
   }
 
+  @media only screen and (max-width: 379px) {
+    .mountain_nav {
+      display: none !important;
+    }
+
+    .carousel_images {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .slick-dots li button::before {
+      opacity: 0 !important;
+    }
+    
+    .slick-dots li.slick-active button::before {
+      opacity: 0 !important;
+    }
+    
+  }
+
   @media only screen and (max-height: 475px) {
     .small_header_font_02 {
       padding-bottom: 0em !important;
@@ -64,7 +85,8 @@ body {
     }
 
     .homepage_logo {
-      width: 40% !important;  
+      display: flex;
+      width: 30% !important;  
       justify-content: center !important;
       text-align: center !important;
     }
@@ -224,6 +246,13 @@ body {
 .history_sub_section {
   background: transparent;
   min-height: 24.5em;
+  margin-top: 5em;
+}
+
+.home_sub_section {
+  background: transparent;
+  min-height: 24.5em;
+  margin-top: 1em;
 }
 
 .history_sub_section_elements {
@@ -300,7 +329,6 @@ body {
   height: 7em;
 }
 
-
 .small_img {
   height: 8.5em;
 }
@@ -308,6 +336,7 @@ body {
 .carousel_images {
   width: 100%;
   background: rgba(64, 79, 107, 0.7);
+  margin-top: 3em;
 }
 
 .slider {
